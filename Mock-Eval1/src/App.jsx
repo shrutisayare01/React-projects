@@ -9,7 +9,11 @@ const AppContent=()=>{
   const appStyle={
     backgroundColor:"red"
   }
-  return()
+  return(
+    <div>
+      <p>content</p>
+    </div>
+  )
 }
 
 
