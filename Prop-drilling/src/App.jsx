@@ -6,7 +6,7 @@ function App() {
   return (
     <>
         <div>
-      <h2>Understanding Props Drilling</h2>
+      <h2>Context API - Removing Props Drilling</h2>
       <Component1 />
     </div>
     </>

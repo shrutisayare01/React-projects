@@ -1,18 +1,22 @@
+import { AppContext } from "./AppContext";
 import Component2 from "./Component2";
 
 function Component1() {
-  const a = "Apple";
-  const b = "Ball";
-  const c = "Cat";
-  const d = "Dog";
-  const e = "Elephant";
-  const f = "Fish";
+  const values = {
+    a: "Apple",
+    b: "Ball",
+    c: "Cat",
+    d: "Dog",
+    e: "Elephant",
+    f: "Fish"
+  };
 
   return (
-    <div>
+    <AppContext.Provider value={values}>
       <h3>Component 1</h3>
-      <Component2 a={a} b={b} c={c} d={d} e={e} f={f} />
-    </div>
+      <Component2 />
+    </AppContext.Provider>
   );
 }
+
 export default Component1;
